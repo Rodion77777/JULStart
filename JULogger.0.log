@@ -1,0 +1,33 @@
+сент. 16, 2021 12:03:04 AM JUL.JULStartTest testGetEmptyMessage
+INFO: Call method "testGetEmptyMessage"
+
+сент. 16, 2021 12:03:04 AM JUL.JULStart getEmptyMessage
+INFO: Call method "getEmptyMessage"
+
+сент. 16, 2021 12:03:04 AM JUL.JULStartTest testGetEmptyMessage
+INFO: Test : "testGetEmptyMessage" is successfully!
+
+сент. 16, 2021 12:03:12 AM JUL.JULStartTest testGetEmptyMessage
+INFO: Call method "testGetEmptyMessage"
+
+сент. 16, 2021 12:03:12 AM JUL.JULStart getEmptyMessage
+INFO: Call method "getEmptyMessage"
+
+сент. 16, 2021 12:03:12 AM JUL.JULStartTest testGetEmptyMessage
+INFO: Test : "testGetEmptyMessage" is successfully!
+
+сент. 16, 2021 12:03:12 AM JUL.JULStartTest testGetMessage
+INFO: Call method "testGetMessage"
+
+сент. 16, 2021 12:03:12 AM JUL.JULStart getMessage
+INFO: Call method "getMessage"
+
+сент. 16, 2021 12:03:12 AM JUL.JULStart getMessage
+INFO: Call method "getMessage"
+
+сент. 16, 2021 12:03:12 AM JUL.JULStart getMessage
+INFO: Call method "getMessage"
+
+сент. 16, 2021 12:03:12 AM JUL.JULStartTest testGetMessage
+INFO: Test : "testGetMessage" is successfully!
+
