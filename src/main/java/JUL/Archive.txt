@@ -1,29 +1,3 @@
-static {
-        Handler consoleHandler = null;
-        Handler fileHandler = null;
-        try {
-            consoleHandler = new ConsoleHandler();
-            fileHandler = new FileHandler("./JULogger.log");
-
-            LOGGER.addHandler(consoleHandler);
-            LOGGER.addHandler(fileHandler);
-
-            consoleHandler.setLevel(LEVEL);
-            fileHandler.setLevel(LEVEL);
-            LOGGER.setLevel(LEVEL);
-
-            LOGGER.config("Configuration done.");
-
-            LOGGER.removeHandler(consoleHandler);
-
-            LOGGER.log(Level.FINE, "Finer logged");
-        } catch (IOException exception) {
-            LOGGER.log(Level.SEVERE, "Error occur in FileHandler.", exception);
-        }
-
-        LOGGER.finer("Finest example on LOGGER handler completed.");
-    }
-
 
 
     handlers = java.util.logging.FileHandler, java.util.logging.ConsoleHandler
