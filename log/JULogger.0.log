@@ -31,3 +31,15 @@ INFO: Call method "getMessage"
 сент. 16, 2021 12:03:12 AM JUL.JULStartTest testGetMessage
 INFO: Test : "testGetMessage" is successfully!
 
+сент. 16, 2021 12:55:35 PM JUL.JULStart getMessage
+INFO: Call method "getMessage"
+
+сент. 16, 2021 12:56:17 PM JUL.JULStart getMessage
+INFO: Call method "getMessage"
+
+сент. 16, 2021 1:17:00 PM JUL.JULStart getMessage
+INFO: Call method "getMessage"
+
+сент. 16, 2021 1:17:08 PM JUL.JULStart getMessage
+INFO: Call method "getMessage"
+

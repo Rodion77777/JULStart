@@ -17,7 +17,7 @@ public class JULogger {
 
         try {
             LogManager.getLogManager()
-                    .readConfiguration(new FileInputStream("./JULogger.config"));
+                    .readConfiguration(new FileInputStream("src/main/resources/JULogger.config"));
         } catch (IOException ioException) {
             myLogger.log(Level.SEVERE, "Error in loading configuration!", ioException);
         }
