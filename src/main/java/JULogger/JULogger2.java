@@ -6,8 +6,8 @@ import java.util.logging.*;
 public class JULogger2 {
 
     public Logger LOGGER;
-    private final Level LEVEL = Level.INFO;
-    private final String logPath = "./log/JULogger.%g.log";
+    private final Level LEVEL = Level.ALL;
+    private final String pattern = "./log/jul_2/JULogger.%g.log";
 
     public JULogger2 (String className) {
 
@@ -15,9 +15,17 @@ public class JULogger2 {
 
         Handler consoleHandler = null;
         Handler fileHandler = null;
+        Formatter simpleFormatter = null;
+
+
         try {
             consoleHandler = new ConsoleHandler();
-            fileHandler = new FileHandler(logPath);
+            fileHandler = new FileHandler(pattern, 20000,5,true);
+            simpleFormatter = new SimpleFormatter();
+
+            fileHandler.setFormatter(simpleFormatter);
+            consoleHandler.setFormatter(simpleFormatter);
+
 
             LOGGER.addHandler(consoleHandler);
             LOGGER.addHandler(fileHandler);
@@ -26,15 +34,15 @@ public class JULogger2 {
             fileHandler.setLevel(LEVEL);
             LOGGER.setLevel(LEVEL);
 
-            LOGGER.config("Configuration done.");
+            LOGGER.config("Configuration done.\n");
 
             LOGGER.removeHandler(consoleHandler);
 
-            LOGGER.log(Level.FINE, "Finer logged");
+            LOGGER.log(Level.FINE, "Finer logged\n");
         } catch (IOException exception) {
-            LOGGER.log(Level.SEVERE, "Error occur in FileHandler.", exception);
+            LOGGER.log(Level.SEVERE, "Error occur in FileHandler.\n", exception);
         }
 
-        LOGGER.finer("Finest example on LOGGER handler completed.");
+        LOGGER.finer("Finest example on LOGGER handler completed.\n");
     }
 }
