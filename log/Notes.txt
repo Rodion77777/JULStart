@@ -1,0 +1,10 @@
+JULogger2 creates a new log file while adding logs to an existing file.
+It would be possible to somehow pass the FileHandler to each other,
+so as not to create a new one,
+but in real life we would not need two identical loggers.
+I've created separate folders for them so as not to mix up the files.
+
+JULogger2 создает новый лог файл, при этом добавляет логи в уже существующий файл.
+Можно было бы как-то передавать друг другу FileHandler, что бы не создавать новый,
+но в реальных условиях нам не понадобится два одинаковых логгера.
+Я создал им отдельные папки что бы не путать файлы.
