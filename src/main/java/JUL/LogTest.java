@@ -10,7 +10,7 @@ public class LogTest {
 
     public static void myTest () {
         final String methodName = "myTest";
-        LOGGER.logp(Level.INFO, CLASS_NAME, methodName, "");
+        LOGGER.logp(Level.INFO, CLASS_NAME, methodName, "Example of using logger");
         System.out.println("Using logger without its create.");
     }
 }
