@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class JULStart {
 
     private static final JULogger MY_LOGGER = new JULogger(JULStart.class.getName());
-    private static final Logger LOGGER = MY_LOGGER.myLogger;
+    public static final Logger LOGGER = MY_LOGGER.myLogger;
     public static final PrintStream OUT = System.out;
 
     public static void example1 () {
